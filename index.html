@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>IMC - Calculadora</title>
+</head>
+<body>
+    <div class="container-app">
+        <div class="buttons-section">
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                <li class="nav-item" role="presentation">
+                    <button onclick="window.showSection('funcionamento')" class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Funcionamento</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button onclick="window.showSection('explicacao')" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Explicação</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="funcionamento" class="section">
+            <div class="imc">
+                <h1>Calculadora IMC</h1>
+                <label for="altura">Altura ( M )</label>
+                <input type="number" name="" id="altura">
+                <label for="peso">Peso ( KG )</label>
+                <input type="number" id="peso">
+                <br>
+                <input type="submit" id="button-calcular" value="Calcular" onclick="">
+            
+                <div id="resultado"></div>
+            </div>
+
+
+        </div>
+        <div id="explicacao" class="section">
+            <h1>Explicação</h1>
+            <h3>Problemática</h3>
+            <p>"Escreva um programa que peça ao usuário sua altura e peso, calcule o IMC (Índice de Massa Corporal) e classifique de acordo com a tabela da OMS (abaixo do peso, peso normal, sobrepeso, obesidade). Exiba o valor do IMC e a classificação usando a instrução switch."</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./sources/IMC-calculo-function.png" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./sources/IMC-classificar-function.png" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./sources/exibir-function.png" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./sources/control-function.png" alt="Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./sources/html.png" alt="Image 5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="page.js"></script>
+    <script src="questao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
